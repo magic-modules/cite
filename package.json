@@ -6,6 +6,7 @@
   "license": "AGPL-3.0",
   "description": "@magic Cite module. Makes Citations easy.",
   "main": "src/index.mjs",
+  "type": "module",
   "engines": {
     "node": ">=14.15.4"
   },
