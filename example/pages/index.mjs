@@ -7,18 +7,16 @@ export const View = state => [
     ' Cite component.',
   ]),
 
-  p('It adds “” around the cite and sets font - style: italic.'),
+  p('It adds “” around the cite and sets font-style: italic; css.'),
 
   Cite({ quote: '@magic-modules/cite', author: 'Wizards & Witches' }),
 
   h2({ id: 'installation' }, 'installation'),
-
   Pre(`npm install --save-exact @magic-modules/cite`),
 
   h2({ id: 'usage' }, 'usage'),
 
   h3('Markdown:'),
-
   Pre(`<Cite quote="Insightful Citation String" author="Awesome Person"></Cite>`),
 
   h3('Javascript:'),
@@ -28,7 +26,7 @@ export const View = state => [
 
   Cite({ quote: 'Insightful Citation String', author: 'Awesome Person' }),
 
-  h2('source'),
+  h2({ id: 'source' }, 'source'),
 
   p([
     'the source for this page is in the ',
